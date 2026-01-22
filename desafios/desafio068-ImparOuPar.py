@@ -1,8 +1,8 @@
 from random import randint
-v= 0
+vitorias = 0
 while True:
     
-    sort = randint(0, 10)
+    NumPc = randint(0, 10)
     
     while True:
         entrada = input('Me diga um número de 0 a 10 para o nosso impar ou par! ')
@@ -15,7 +15,7 @@ while True:
         else:
             print('Valor inválido! Você deve digitar apenas números. Tente novamente.')
 
-    resultado = sort + jogador
+    resultado = NumPc + jogador
     escolha = ' '
 
     while escolha not in 'PI':
@@ -32,14 +32,14 @@ while True:
     if escolha == 'P':
         if resultado % 2 == 0:
             print('Parabéns!! Você venceu! ')
-            v += 1
+            vitorias += 1
         else:
             print('Você perdeu!')
             break
     elif escolha == 'I':
         if resultado % 2 == 1:
             print('Parabéns!! Você venceu! ')
-            v += 1
+            vitorias += 1
         else:
             print('Você perdeu!')
             break
@@ -48,7 +48,7 @@ while True:
     print('Vamos novamente! ')
     print('-=' * 20)
 
-print(f'GAME OVER! VOCÊ PERDEU. VOCÊ GANHOU {v} VEZES ')
+print(f'GAME OVER! VOCÊ PERDEU. VOCÊ GANHOU {vitorias} VEZES ')
 
 
 
